@@ -11,13 +11,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
-        android:layout_marginTop="113dp"
+        android:layout_marginTop="164dp"
         android:layout_marginEnd="149dp"
         android:text="EZmart"
         android:textColor="#000000"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,13 +27,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
-        android:layout_marginEnd="98dp"
+        android:layout_marginEnd="83dp"
+        android:backgroundTint="@color/black"
         android:ems="10"
         android:hint="ID를 입력하세요"
+        app:passwordToggleEnabled="true"
+        android:inputType="textPersonName"
         android:textColor="@color/black"
         android:textColorHint="#888080"
-        android:backgroundTint="@color/black"
-        android:inputType="textPersonName"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_title" />
@@ -42,13 +44,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:layout_marginEnd="97dp"
+        android:layout_marginEnd="83dp"
+        android:backgroundTint="@color/black"
         android:ems="10"
         android:hint="PW를 입력하세요"
+        android:inputType="textPassword"
         android:textColor="@color/black"
         android:textColorHint="#888080"
-        android:backgroundTint="@color/black"
-        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/img_pw"
@@ -81,25 +83,26 @@
         app:layout_constraintTop_toBottomOf="@+id/btn_login" />
 
     <ImageView
+        android:id="@+id/img_id"
+        android:layout_width="46dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="260dp"
+        app:layout_constraintEnd_toStartOf="@+id/id"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/idimg" />
+
+    <ImageView
         android:id="@+id/img_pw"
         android:layout_width="46dp"
         android:layout_height="45dp"
         android:layout_marginStart="58dp"
         android:layout_marginTop="4dp"
         app:layout_constraintEnd_toStartOf="@+id/pw"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_id"
         app:srcCompat="@drawable/key" />
-
-    <ImageView
-        android:id="@+id/img_id"
-        android:layout_width="46dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="210dp"
-        app:layout_constraintEnd_toStartOf="@+id/id"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/idimg" />
 </androidx.constraintlayout.widget.ConstraintLayout>

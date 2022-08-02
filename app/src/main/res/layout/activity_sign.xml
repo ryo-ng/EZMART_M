@@ -7,7 +7,7 @@
     tools:context=".sign">
 
     <Button
-        android:id="@+id/sign_btn"
+        android:id="@+id/btn_join"
         android:layout_width="134dp"
         android:layout_height="40dp"
         android:layout_marginBottom="36dp"
@@ -17,7 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_card"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cardnum"
         app:layout_constraintVertical_bias="0.945" />
 
     <Button
@@ -150,6 +150,7 @@
         android:hint="이름을 입력하세요"
         android:inputType="textPersonName"
         android:textColorHint="#888080"
+        android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toTopOf="@+id/textView"
         tools:ignore="MissingConstraints" />
@@ -164,6 +165,7 @@
         android:ems="10"
         android:gravity="center"
         android:hint="아이디를 입력하세요"
+        android:textColor="@color/black"
         android:inputType="textPersonName"
         android:textColorHint="#888080"
         app:layout_constraintStart_toEndOf="@+id/textView2"
@@ -181,6 +183,7 @@
         android:ems="10"
         android:gravity="center"
         android:hint="-없이 숫자만 입력하세요"
+        android:textColor="@color/black"
         android:inputType="phone"
         android:textColorHint="#888080"
         app:layout_constraintStart_toEndOf="@+id/textView6"
@@ -196,6 +199,7 @@
         android:ems="10"
         android:gravity="center"
         android:hint="이메일을 입력하세요"
+        android:textColor="@color/black"
         android:inputType="textEmailAddress"
         android:textColorHint="#888080"
         app:layout_constraintStart_toEndOf="@+id/textView5"
@@ -203,7 +207,7 @@
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/txt_card"
+        android:id="@+id/txt_cardnum"
         android:layout_width="244dp"
         android:layout_height="53dp"
         android:layout_marginStart="32dp"
@@ -211,6 +215,7 @@
         android:ems="10"
         android:gravity="center"
         android:hint="-없이 숫자만 입력하세요"
+        android:textColor="@color/black"
         android:inputType="phone"
         android:textColorHint="#888080"
         app:layout_constraintStart_toEndOf="@+id/textView7"
@@ -226,6 +231,7 @@
         android:ems="10"
         android:gravity="center"
         android:hint="닉네임을 입력하세요"
+        android:textColor="@color/black"
         android:inputType="textPersonName"
         android:textColorHint="#888080"
         app:layout_constraintStart_toEndOf="@+id/textView4"
@@ -241,6 +247,7 @@
         android:ems="10"
         android:gravity="center"
         android:hint="패스워드를 입력하세요"
+        android:textColor="@color/black"
         app:passwordToggleEnabled="false"
         android:inputType="textPassword"
         android:textColorHint="#888080"

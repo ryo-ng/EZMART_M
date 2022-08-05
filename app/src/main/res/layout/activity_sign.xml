@@ -49,7 +49,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/price"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="27dp"
@@ -76,7 +76,7 @@
         app:layout_constraintEnd_toEndOf="@+id/textView2"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/price" />
 
     <TextView
         android:id="@+id/textView3"
@@ -102,10 +102,10 @@
         android:gravity="center"
         android:text="이메일"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/textView6"
-        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintBottom_toTopOf="@+id/price"
+        app:layout_constraintEnd_toEndOf="@+id/price"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/price"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <TextView
@@ -186,8 +186,8 @@
         android:textColor="@color/black"
         android:inputType="phone"
         android:textColorHint="#888080"
-        app:layout_constraintStart_toEndOf="@+id/textView6"
-        app:layout_constraintTop_toTopOf="@+id/textView6"
+        app:layout_constraintStart_toEndOf="@+id/price"
+        app:layout_constraintTop_toTopOf="@+id/price"
         tools:ignore="MissingConstraints" />
 
     <EditText
